@@ -1,0 +1,21 @@
+﻿@model Fabstox_Website.Models.ContackInfo
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+<form>
+    <div class="control controls-row">
+        @Html.TextBoxFor(i => i.name, new { @class = "span3", placeholder = "Name" })
+        @Html.TextBoxFor(i => i.email, new { @class = "span3", placeholder = "Email address" })
+
+    </div>
+    <div class="controls">
+        @Html.TextAreaFor(i => i.message, new { @class = "span6", placeholder = "Your Message" })
+    </div>
+    <div class="controls">
+        <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Send</button>
+    </div>
+</form>
+
